@@ -1,11 +1,33 @@
+/*---------------GLOBAL-------------------*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 body{
-    color: green;
+    background-color: hsl(216, 20%, 95%);
+    font-family:'Poppins', sans-serif;
+}
+
+.container{
+
+}
+
+/*---------------HEADER-------------------*/
+header{
+    background-color: #2d4a22;
+    padding: 2rem 0 10rem;
+    text-align: center;
 }
 
 #logo{
-    color: blueviolet;
+    color: #fff;
+    font-weight: 100;
+
 }
 
+/*---------------BALANCE-------------------*/
 #balance{
 
 }
