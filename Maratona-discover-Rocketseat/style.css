@@ -78,7 +78,7 @@ header{
 /*---------------FOOTER-------------------*/
 #data-table{
     width: 100%;    
-    border-spacing: 0 0.5rem; 
+    border-spacing: 0 0.5rem; /*SErve para tirar o espaço entre as linhas*/
     color: #969cb3 ;
 }
 
