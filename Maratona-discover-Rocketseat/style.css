@@ -40,6 +40,22 @@ h2{
     font-weight: normal;
 }
 
+/*---------------LINKS AND BUTTONS-------------------*/
+
+a{
+    color: #49aa26;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #3dd705;
+}
+
+.button.new{
+    display: inline-block;
+    margin-bottom: .8rem;
+}
+
 /*---------------HEADER-------------------*/
 header{
     background-color: #2d4a22;
@@ -100,9 +116,14 @@ header{
     color: #969cb3 ;
 }
 
-table thead tr td:first-child,
+table thead tr th:first-child,
 table tbody tr td:first-child{
     border-radius: 0.25rem 0 0 0.25rem;
+}
+
+table thead tr th:last-child,
+table tbody tr td:last-child{
+    border-radius: 0 0.25rem 0.25rem 0;
 }
 
 table thead th{
