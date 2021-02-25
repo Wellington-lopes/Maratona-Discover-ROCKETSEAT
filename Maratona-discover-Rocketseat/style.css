@@ -115,13 +115,16 @@ header{
 }
 
 /*---------------TABLE-------------------*/
-#data-table{
+#transaction{
     display: block;
+    width: 100%;
+    overflow-x: auto;
+}
+
+#data-table{
     width: 100%;    
     border-spacing: 0 0.5rem; /*SErve para tirar o espaço entre as linhas*/
     color: #969cb3;
-
-    overflow-x: auto;
 }
 
 table thead tr th:first-child,
