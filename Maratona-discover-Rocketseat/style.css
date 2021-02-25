@@ -171,6 +171,24 @@ td.income{
 
 }
 
+/*---------------MODAL-------------------*/
+
+.modal-overlay{
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.7);
+
+    position: fixed;
+    top: 0;
+}
+
+.modal{
+    background: #f0f2f5;
+    padding: 2.4rem;
+}
+
+
 /*---------------FOOTER-------------------*/
 
 footer{
