@@ -53,8 +53,11 @@ const transactions = [
 
  //document object model
 const DOM = {
-    innerHTMLTransaction() {
+    addTransaction(transaction, index){
 
+    },
+    innerHTMLTransaction() {
+       
         const html = `
             <tr>
             <td class="description">Luz</td>
