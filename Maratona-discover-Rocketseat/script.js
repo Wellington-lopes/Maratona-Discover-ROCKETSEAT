@@ -45,29 +45,32 @@ const transactions = [
      },
      expenses() {
          //somar as saídas
-     }
+     },
      total() {
          //Entradas - saídas
-     }
+     },
  }
 
  //document object model
 const DOM = {
     addTransaction(transaction, index){
+        console.log(transaction)
+        const tr = document.createElement('tr')
+        tr.innerHTML = DOM.innerHTMLTransaction()
 
     },
     innerHTMLTransaction() {
        
         const html = `
-            <tr>
             <td class="description">Luz</td>
             <td class="expense">- R$ 500,00</td>
             <td class="date">22/01/2021</td>
             <td>
                 <img src="./assets/minus.svg" alt="remover transação">
-            </td>
-            </tr>
+            </td>        
         `
-
+        return html
     }
 }
+
+DOM.addTransaction()
