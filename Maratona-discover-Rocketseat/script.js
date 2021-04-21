@@ -42,12 +42,33 @@ const transactions = [
  const Transaction = {
      incomes() {
          let income = 0;
-         // pegar todas as transacoes
-         // se for maior que zero 
-         // somar a uma variavel e retornar a variavel
-         return income;
+            // pegar todas as transacoes
+            // para cada transacao, 
+         transaction.forEach(transaction => {
+
+        
+            // se ela for maior que zero 
+        if(transaction.amount > 0) {
+            // somar a uma variavel e retornar a variavel
+            income += transaction.amount;
+
+            }
+        })
+        return income;
      },
      expenses() {
+        let income = 0;
+        
+     transaction.forEach(transaction => {
+
+    
+        
+    if(transaction.amount > 0) {
+       
+        income += transaction.amount;
+
+            }
+        })
          return "Aqui"
      },
      total() {
@@ -79,7 +100,7 @@ const DOM = {
             </td>        
         `
         return html
-    }
+    },
 
     updateBalance() {
         document
