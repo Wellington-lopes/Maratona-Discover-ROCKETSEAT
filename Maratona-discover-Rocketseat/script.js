@@ -40,14 +40,18 @@ const transactions = [
 ];
  
  const Transaction = {
-     income() {
-         //somar as entradas
+     incomes() {
+         let income = 0;
+         // pegar todas as transacoes
+         // se for maior que zero 
+         // somar a uma variavel e retornar a variavel
+         return income;
      },
      expenses() {
-         //somar as saídas
+         return "Aqui"
      },
      total() {
-         //Entradas - saídas
+         return "Discover"
      },
  }
 
@@ -76,14 +80,39 @@ const DOM = {
         `
         return html
     }
+
+    updateBalance() {
+        document
+        .getElementById('incomeDisplay')
+        .innerHTML = Transaction.incomes()
+        document
+        .getElementById('expenseDisplay')
+        .innerHTML = Transaction.expenses()
+        document
+        .getElementById('totalDisplay')
+        .innerHTML = Transaction.total()
+    }
 }
 
 const Utils = {
     formatCurrency(value){
         const signal = Number(value) < 0 ? "-" : ""
+
+        value = String(value).replace(/\D/g, "")
+
+        value = Number(value) / 100
+
+        value = value.toLocaleString("pt-BR", {
+            style: "currency",
+            currency: "BRL"
+        })
+
+        return signal + value
     }
 }
 
 transactions.forEach(function(transaction){
     DOM.addTransaction(transaction)
 })
+
+DOM.updateBalance()
